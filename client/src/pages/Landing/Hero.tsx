@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="min-h-[90vh] bg-gradient-to-b from-slate-50 to-blue-50">
@@ -19,13 +20,17 @@ function Hero() {
         </p>
 
         <div className="mt-10 flex gap-4">
-          <button className="rounded-xl bg-blue-600 px-8 py-4 text-white hover:bg-blue-700">
-            Start Free
-          </button>
-
-          <button className="rounded-xl border border-gray-300 bg-white px-8 py-4 hover:bg-gray-100">
-            Watch Demo
-          </button>
+          <Link to="/register">
+             <button className="rounded-xl bg-blue-600 px-8 py-4 text-white hover:bg-blue-700">
+                Start Free
+            </button>
+          </Link>
+          
+          <Link to="/demo">
+            <button className="rounded-xl border border-gray-300 bg-white px-8 py-4 hover:bg-gray-100">
+              Watch Demo
+            </button>
+          </Link>   
         </div>
 
       </div>
