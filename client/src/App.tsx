@@ -1,7 +1,7 @@
+import LandingPage from "./pages/Landing/LandingPage";
+
 function App() {
-  return (
-    <h1>HirePilot AI</h1>
-  );
+  return <LandingPage />;
 }
 
 export default App;
